@@ -145,7 +145,7 @@ We probably want the user to be able to click sign out on any page when they're 
 ```erb
 #views/layouts/application.html.erb
   ...
-  link_to("Sign out", destroy_user_session_path)
+    <%= link_to('Signout', destroy_user_session_path, :method => :delete) %>    
   ...
 ```
 
