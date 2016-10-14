@@ -35,7 +35,7 @@ Devise is made up of modules. Modules are applied to your `User` model, so you s
 * **Validatable:** provides validations of email and password. It's optional and can be customized, so you're able to define your own validations.
 * **Lockable:** locks an account after a specified number of failed sign-in attempts. Can unlock via email or after a specified time period.
 
-That's all from the [Devise docs][Devise].
+That's all from the [Devise docs](http://www.rubydoc.info/github/plataformatec/devise/master/Devise).
 
 ## Configuration
 
