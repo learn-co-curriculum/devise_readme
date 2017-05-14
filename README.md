@@ -149,7 +149,7 @@ We probably want the user to be able to click 'Sign Out' on any page when they'r
 
   ...
 
-  <%= link_to("Sign Out", destroy_user_session_path) %>
+  <%= link_to("Sign Out", destroy_user_session_path, :method => 'delete') %>
 
   ...
 ```
