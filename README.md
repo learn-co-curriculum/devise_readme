@@ -107,14 +107,10 @@ The documentation on this is quite clear:
 
 Handles blocking a user's access after a certain number of attempts. Lockable accepts two different strategies to unlock a user after they're blocked: email and time. The former will send an email to the user when the lock happens, containing a link to unlock their account. The second will unlock the user automatically after some configured time (e.g., two hours). It's also possible to set up Lockable to use both email and time strategies.
 
-
 ### [omniauthable]
-
-Honestly, this one doesn't give you a whole lot more than OmniAuth already does. It does set some (but not all!) of the routes for you. That's a nice touch.
-
+This one doesn't give you a whole lot more than OmniAuth already does. It does set some (but not all!) of the routes for you. That's a nice touch.
 
 ## Typical Setup
-
 Add Devise to your Gemfile:
 ```ruby
 gem 'devise'
@@ -185,8 +181,19 @@ In a real app you'd probably want to add some CSS and probably put these pieces 
 
 ## Resources
 * [How to use Devise](https://launchschool.com/blog/how-to-use-devise-in-rails-for-authentication)
-* [Devise](https://github.com/plataformatec/devise)
-* [engine](http://guides.rubyonrails.org/engines.html)
-* [registerable](http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Registerable), [database_authenticable](http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/DatabaseAuthenticatable), [recoverable](http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Recoverable), [rememberable](http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Rememberable), [trackable](http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Trackable), [validatable](http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Validatable), [lockable](http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Lockable),[omniauthable](http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Omniauthable)
+* [Devise][Devise]
+* [engine][engine]
+* [registerable], [database_authenticable], [recoverable], [rememberable], [trackable], [validatable], [lockable], [omniauthable]
+
+[Devise]: https://github.com/plataformatec/devise
+[engine]: http://guides.rubyonrails.org/engines.html
+[registerable]: http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Registerable
+[database_authenticable]: http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/DatabaseAuthenticatable
+[recoverable]: http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Recoverable
+[rememberable]: http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Rememberable
+[trackable]: http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Trackable
+[validatable]: http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Validatable
+[lockable]: http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Lockable
+[omniauthable]: http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Omniauthable
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/devise_readme'>Devise</a> on Learn.co and start learning to code for free.</p>
