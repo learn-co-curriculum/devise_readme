@@ -123,7 +123,30 @@ rails generate devise:install
 
 This creates a massive initializer in `config/initializers/devise.rb`. This is probably the single best source of documentation for Devise. You'll want to look through it at some point.
 
-You'll notice that the installer prints a big notice of several things you should do. In particular, we should have a root route.
+You'll notice that the installer prints a big notice of several things you should do. 
+Some setup you must do manually if you haven't yet:
+  1. Ensure you have defined default url options in your environments files. Here
+     is an example of default_url_options appropriate for a development environment
+     in config/environments/development.rb:
+       config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+     In production, :host should be set to the actual host of your application.
+  2. Ensure you have defined root_url to *something* in your config/routes.rb.
+     For example:
+       root to: "home#index"
+  3. Ensure you have flash messages in app/views/layouts/application.html.erb.
+     For example:
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+  4. If you are deploying on Heroku with Rails 3.2 only, you may want to set:
+       config.assets.initialize_on_precompile = false
+	5. You can copy Devise views (for customization) to your app by running:
+       rails g devise:views
+			 
+In particular, update defined default url options in your environments files in config/environments/development.rb:
+
+       config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+In particular, we also should have a root route.
 
 Create a `WelcomeController` with a `#home` view and route.
 
