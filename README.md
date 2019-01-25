@@ -21,6 +21,8 @@ It will also be, at times, a giant pain because no magic is without a price. Dev
 
 Devise is a Rails [engine]. That means it's basically a Rails app that sits inside your Rails app. It has its own views and controllers and defines its own routes.
 
+![rails-xzibit](https://user-images.githubusercontent.com/16994388/51770489-94d51600-20ab-11e9-9581-0328bf626cef.jpg)
+
 It does not define models for you, but it does have generators that make the process of creating a Devise-compliant `User` model very easy.
 
 Devise is made up of modules. Modules are applied to your `User` model, so you should read these as abilities that `User` accounts can have:
