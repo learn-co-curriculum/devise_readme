@@ -136,6 +136,8 @@ Run `rake routes` and `rake db:migrate`. You should see that Devise has added a 
 
 You should now have a working app with sign-in capability!
 
+![devise_login](https://user-images.githubusercontent.com/16994388/51772358-6fe3a180-20b1-11e9-957a-50958dd697a4.png)
+
 If you look at the routes you can see that Devise gives us a `sign_out` route as well. Let's implement that.
 
 We probably want the user to be able to click 'Sign Out' on any page when they're logged in, so let's add that to our layout.
@@ -149,6 +151,7 @@ We probably want the user to be able to click 'Sign Out' on any page when they'r
 
   ...
 ```
+![devise_signup_signin](https://user-images.githubusercontent.com/16994388/51772359-6fe3a180-20b1-11e9-91a4-996df84f3f4a.png)
 
 Devise will also add messages to the flash when a user signs in or when there's an error. We can add that to the layout as well so that those flash notices appear.
 
