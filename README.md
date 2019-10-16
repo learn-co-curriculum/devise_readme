@@ -277,8 +277,9 @@ method `user_signed_in?`.
 
 ## Obeying the Installer: Showing Messages in the `flash`
 
-Devise will also add messages to the flash when a user signs in or when there's
-an error.
+Devise will also add messages to the `flash` when a user signs in or when
+there's an error. The [`flash`][flash] is a message that appears when a view is
+rendered, but it only sticks around one page load.
 
 Visit our "Sign In" path and enter a valid use with an invalid password. See,
 how there's no feedback? We want users to see these errors.
@@ -341,3 +342,4 @@ decide what works _for your application_.
 [omniauthable]: http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Omniauthable
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/devise_readme'>Devise</a> on Learn.co and start learning to code for free.</p>
+[flash]: https://api.rubyonrails.org/classes/ActionDispatch/Flash.html
