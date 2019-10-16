@@ -7,15 +7,23 @@
 
 ## Overview
 
-[Devise] is a gem for when you have a lot of authentication needs.
+[Devise] is a gem for when you have a lot of authentication needs. Common
+security-based tasks that you know from internet site use are all provided:
 
-Want to send confirmation emails, lock user accounts after a certain number of failed login attempts, and send password resets? Devise can do that.
+* Sign-up confirmation emails
+* Locking accounts after failed password attempts
+* Emailing password resets
+* Role-based permission granting (e.g. an "admin" can view this page, but a
+  "manager" cannot)
 
-Want to allow multiple models to be signed in, each with different roles, granting different permissions? Devise can handle that too.
+Devise also has an extensive collection of generators that create controllers
+and views. We can run one short command and Devise will set up a login page for
+us. There's only one catch: because so much happens without our having to
+understand how it works, Devise is effectively doing magic. Creating
+customization or debugging Devise-generated shortcuts becomes a lot harder.
 
-Devise has an extensive collection of generators. It includes standard views and controllers. It will generate templates that include Bootstrap for you.
-
-It will also be, at times, a giant pain because no magic is without a price. Devise abstracts away a lot of implementation details. That can be very nice, but it can also make it challenging to set up and debug when things don't go exactly to plan.
+In this document we'll describe the architecture of [Devise] and list some of
+the shortcuts it provides.
 
 ## Architecture
 
