@@ -196,7 +196,7 @@ In summary it says:
 1. Make you sure you set up Rails to be able to send email (for password
    lock-out, etc.)
 2. Make sure you have a route
-3. Make sure you have flash messages being displayed so that Devise feedback
+3. Make sure you have [flash] messages being displayed so that Devise feedback
    (password expired, password wrong, etc.) can be shown
 4. Here's how to customize views (take a little bit of "magic" out).
 
@@ -277,9 +277,9 @@ method `user_signed_in?`.
 
 ## Obeying the Installer: Showing Messages in the `flash`
 
-Devise will also add messages to the `flash` when a user signs in or when
-there's an error. The [`flash`][flash] is a message that appears when a view is
-rendered, but it only sticks around one page load.
+Devise will also add messages to the [`flash`][flash] when a user signs in or
+when there's an error. The [`flash`][flash] is a message that appears when a
+view is rendered, but it only sticks around one page load.
 
 Visit our "Sign In" path and enter a valid use with an invalid password. See,
 how there's no feedback? We want users to see these errors.
