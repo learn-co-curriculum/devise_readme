@@ -224,7 +224,11 @@ end
 ```
 
 Ensure your `http://localhost:3000` routes you to your `WelcomeController`'s
-`home` action. Stop your server after verifying your root route works.
+`home` action.
+
+![User sign_in home page](https://curriculum-content.s3.amazonaws.com/web-development/rails/devise_readme/devise_login.png)
+
+Stop your server after verifying your root route works.
 
 ## Creating a Devise-Managed `User` Model
 
@@ -298,6 +302,10 @@ how there's no feedback? We want users to see these errors.
 
   ...
 ```
+
+While it won't win any beauty awards, it communicates what happened.
+
+![Invalid login](https://curriculum-content.s3.amazonaws.com/web-development/rails/devise_readme/devise_with_flash.png)
 
 ## Conclusion
 
