@@ -342,5 +342,3 @@ decide what works _for your application_.
 [omniauthable]: http://www.rubydoc.info/github/plataformatec/devise/master/Devise/Models/Omniauthable
 [flash]: https://api.rubyonrails.org/classes/ActionDispatch/Flash.html
 
-<p class='util--hide'>View <a href='https://learn.co/lessons/devise_readme'>Devise</a> on Learn.co and start learning to code for free.</p>
-
